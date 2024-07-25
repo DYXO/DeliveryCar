@@ -31,7 +31,6 @@ void motor::set_speed(float leftspeed,float rightspeed)
 		else
 		{
 			l_setpwm=(leftspeed/100)*255;
-			printf("%d\n",l_setpwm);
 			gpioPWM(l_motorgpio1, 0);
 	        gpioPWM(l_motorgpio2, l_setpwm);
 		}
