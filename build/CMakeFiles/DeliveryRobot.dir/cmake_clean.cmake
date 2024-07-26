@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DeliveryRobot.dir/src/main.cpp.o.d"
   "CMakeFiles/DeliveryRobot.dir/src/motor.cpp.o"
   "CMakeFiles/DeliveryRobot.dir/src/motor.cpp.o.d"
+  "CMakeFiles/DeliveryRobot.dir/src/ultrasonic.cpp.o"
+  "CMakeFiles/DeliveryRobot.dir/src/ultrasonic.cpp.o.d"
   "DeliveryRobot"
   "DeliveryRobot.pdb"
 )
