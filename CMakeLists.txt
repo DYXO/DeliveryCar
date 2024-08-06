@@ -7,12 +7,11 @@ project(DeliveryRobot)
 include_directories(${CMAKE_SOURCE_DIR}/inc)
 
 set(SOURCE_FILES
-	../src/main.cpp
+	../test/test_track.cpp
+	#../src/main.cpp
 	../src/motor.cpp
-	../src/ultrasonic.cpp
 	../src/linetrack.cpp
 	../inc/motor.h
-	../inc/ultrasonic.h
 	../inc/linetrack.h
 )
 
