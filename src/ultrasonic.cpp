@@ -44,10 +44,12 @@ void ultrasonic::wave_start()
 void ultrasonic::echo_wait()
 {
 	running=1;
-	while(running)
+	while(1)
 	{
-		wave_start();
-		while(gpioRead(echogpio)!=1);
+		while(gpioRead(echogpio)!=1)
+		{
+			wave_start();
+		}
 		gpioTime(1,p_s,p_m);
 		last_seconds=seconds;
 		last_micros=micros;
