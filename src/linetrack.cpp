@@ -15,17 +15,17 @@ void linetrack::track_control()
 {
 	l_value=gpioRead(l_infraredgpio);
 	r_value=gpioRead(r_infraredgpio);
-	if(l_value==1&&r_value==1)
+	if(l_value==0&&r_value==0)
 	{
-		carmotor.set_speed(80,80);
-	}
-	else if(l_value==1&&r_value==0)
-	{
-		carmotor.set_speed(-40,80);
+		carmotor.set_speed(20,20);
 	}
 	else if(l_value==0&&r_value==1)
 	{
-		carmotor.set_speed(80,-40);
+		carmotor.set_speed(-20,40);
+	}
+	else if(l_value==1&&r_value==0)
+	{
+		carmotor.set_speed(40,-20);
 	}
 	else
 	{
