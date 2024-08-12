@@ -1,6 +1,6 @@
 CMakeFiles/DeliveryRobot.dir/src/motor.cpp.o: \
- /home/robot/DeliveryRobot/src/motor.cpp /usr/include/stdc-predef.h \
- /home/robot/DeliveryRobot/inc/motor.h /usr/include/stdio.h \
+ /home/robot/DeliveryCar/src/motor.cpp /usr/include/stdc-predef.h \
+ /home/robot/DeliveryCar/inc/motor.h /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \

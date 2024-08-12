@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/robot/DeliveryRobot/inc
+CXX_INCLUDES = -I/home/robot/DeliveryCar/inc
 
 CXX_FLAGS = -std=gnu++11
 

@@ -1,9 +1,9 @@
 #include "motor.h"
+#include "ultrasonic.h"
 
 int main(int argc, char *argv[]) 
 {
-	while(1)
-	{
-	}
+	ultrasonic test_ultrasonic;
+	test_ultrasonic.echo_wait();
 	return 0;
 }

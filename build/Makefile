@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/robot/DeliveryRobot
+CMAKE_SOURCE_DIR = /home/robot/DeliveryCar
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/robot/DeliveryRobot/build
+CMAKE_BINARY_DIR = /home/robot/DeliveryCar/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/DeliveryRobot/build/CMakeFiles /home/robot/DeliveryRobot/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/DeliveryCar/build/CMakeFiles /home/robot/DeliveryCar/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/DeliveryRobot/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robot/DeliveryCar/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -177,6 +177,30 @@ src/motor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeliveryRobot.dir/build.make CMakeFiles/DeliveryRobot.dir/src/motor.cpp.s
 .PHONY : src/motor.cpp.s
 
+src/ultrasonic.o: src/ultrasonic.cpp.o
+.PHONY : src/ultrasonic.o
+
+# target to build an object file
+src/ultrasonic.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeliveryRobot.dir/build.make CMakeFiles/DeliveryRobot.dir/src/ultrasonic.cpp.o
+.PHONY : src/ultrasonic.cpp.o
+
+src/ultrasonic.i: src/ultrasonic.cpp.i
+.PHONY : src/ultrasonic.i
+
+# target to preprocess a source file
+src/ultrasonic.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeliveryRobot.dir/build.make CMakeFiles/DeliveryRobot.dir/src/ultrasonic.cpp.i
+.PHONY : src/ultrasonic.cpp.i
+
+src/ultrasonic.s: src/ultrasonic.cpp.s
+.PHONY : src/ultrasonic.s
+
+# target to generate assembly for a file
+src/ultrasonic.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeliveryRobot.dir/build.make CMakeFiles/DeliveryRobot.dir/src/ultrasonic.cpp.s
+.PHONY : src/ultrasonic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +216,9 @@ help:
 	@echo "... src/motor.o"
 	@echo "... src/motor.i"
 	@echo "... src/motor.s"
+	@echo "... src/ultrasonic.o"
+	@echo "... src/ultrasonic.i"
+	@echo "... src/ultrasonic.s"
 .PHONY : help
 
 

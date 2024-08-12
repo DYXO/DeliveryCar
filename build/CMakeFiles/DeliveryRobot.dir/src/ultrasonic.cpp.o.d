@@ -1,6 +1,6 @@
-CMakeFiles/DeliveryRobot.dir/src/main.cpp.o: \
- /home/robot/DeliveryCar/src/main.cpp /usr/include/stdc-predef.h \
- /home/robot/DeliveryCar/inc/motor.h /usr/include/stdio.h \
+CMakeFiles/DeliveryRobot.dir/src/ultrasonic.cpp.o: \
+ /home/robot/DeliveryCar/src/ultrasonic.cpp /usr/include/stdc-predef.h \
+ /home/robot/DeliveryCar/inc/ultrasonic.h /usr/include/stdio.h \
  /usr/include/aarch64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/aarch64-linux-gnu/bits/wordsize.h \
@@ -56,5 +56,4 @@ CMakeFiles/DeliveryRobot.dir/src/main.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/setjmp.h \
  /usr/include/aarch64-linux-gnu/bits/types/__sigset_t.h \
  /usr/include/aarch64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
- /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/robot/DeliveryCar/inc/ultrasonic.h
+ /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h
