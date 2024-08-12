@@ -7,12 +7,14 @@ project(DeliveryRobot)
 include_directories(${CMAKE_SOURCE_DIR}/inc)
 
 set(SOURCE_FILES
-	../test/test_track.cpp
-	#../src/main.cpp
+	../test/test_ultrasonic.cpp
+	../src/main.cpp
 	../src/motor.cpp
-	../src/linetrack.cpp
+  ../src/linetrack.cpp
+	../src/ultrasonic.cpp
 	../inc/motor.h
-	../inc/linetrack.h
+  ../inc/linetrack.h
+	../inc/ultrasonic.h
 )
 
 find_library(pigpio_LIBRARY 
