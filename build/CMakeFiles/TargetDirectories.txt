@@ -1,3 +1,0 @@
-/home/robot/DeliveryCar/build/CMakeFiles/DeliveryRobot.dir
-/home/robot/DeliveryCar/build/CMakeFiles/edit_cache.dir
-/home/robot/DeliveryCar/build/CMakeFiles/rebuild_cache.dir
