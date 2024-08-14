@@ -58,11 +58,12 @@ sudo chmod u+s your_program
 Then try again
 ## if still not work, just give up the sound 
 go to the branch IfAudioNotWork or you can just comment out this following lines in main
+
 line12:
 ```
 //soundplayer warning("Sound.wav");
 ```
-line12:
+line28:
 ```
 //std::thread warning_sound(&soundplayer::play,&warning);
 ```
