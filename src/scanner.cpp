@@ -16,13 +16,15 @@ scanner::~scanner()
 void scanner::startscan()
 {
 	if(running)
-	return;
+		return;
+	running = 1;
 	scanThread = std::thread(&scanner::scan,this);
 }
 
 void scanner::stopscan()
 {
-	if (!running) return;
+	if (!running) 
+		return;
 	running = 0;
 	scanThread.join();
 }
@@ -32,19 +34,18 @@ void scanner::scan()
 	gpioWrite(scan_trig, 1); 
 	gpioDelay(20);
 	gpioWrite(scan_trig, 0); 
-	running=1;
-	while(running)
+	while(1)
 	{
 		std::string barcode;
 		barcode = Scan.receive();
 		if (!barcode.empty()) 
 		{
-            std::cout<<"success!"<<std::endl;
             gpioWrite(scan_trig, 1); 
 			if(callback!=nullptr)
 			{
 				callback->scan_done(barcode);
 			}
+			gpioWrite(scan_trig, 1); 
             break;
         }
         time_sleep(1);
