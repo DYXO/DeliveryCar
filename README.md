@@ -6,7 +6,7 @@ go to this page and follow it
 https://abyz.me.uk/rpi/pigpio/download.html
 ### Step 2 clone this Project
 ```
-git clone https://github.com/DYXO/Delivery_Car.git
+git clone https://github.com/DYXO/DeliveryCar.git
 ```
 ### Step 3 cd to the directory
 ```
