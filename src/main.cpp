@@ -1,7 +1,6 @@
 #include "motor.h"
 #include "linetrack.h"
 #include "ultrasonic.h"
-#include "playsound.h"
 #include "serial.h"
 #include "cabinet.h"
 
@@ -9,7 +8,6 @@ bool have_block=0;
 linetrack car;
 scanner s1(16);
 cabinet DeliveryBox(&s1);
-soundplayer warning("Sound.wav");
 bool arrive=0;
 void control()
 {	
@@ -25,7 +23,6 @@ class PrintDistanceCallback:public UltrasonicCallback
 		if(d<0.3)
 		{
 			have_block=1;
-			std::thread warning_sound(&soundplayer::play,&warning);
 		}
 		else
 		{
