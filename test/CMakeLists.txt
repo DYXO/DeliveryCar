@@ -8,15 +8,27 @@ include_directories(${CMAKE_SOURCE_DIR}/inc)
 
 set(SOURCE_FILES
 	#../test/test_track.cpp
+	#../test/gpiofix.cpp
+	#../test/test_ultrasonic.cpp
+	#../test/test_serial.cpp
+	#../test/test_scanner.cpp
+	#../test/test_playsound.cpp
+	../test/test_cabinet.cpp
+	#../src/main.cpp
 	../src/motor.cpp
 	../src/ultrasonic.cpp
 	../src/linetrack.cpp
 	../src/playsound.cpp
+	../src/serial.cpp
+	../src/scanner.cpp
+	../src/cabinet.cpp
 	../inc/motor.h
 	../inc/ultrasonic.h
 	../inc/linetrack.h
 	../inc/playsound.h
-
+	../inc/serial.h
+	../inc/scanner.h
+	../inc/cabinet.h
 )
 
 find_library(pigpio_LIBRARY 

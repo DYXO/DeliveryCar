@@ -39,7 +39,7 @@ private:
      */
 	const int l_motorgpio1 = 17;
 	const int l_motorgpio2 = 25;
-	const int r_motorgpio1 = 18;
+	const int r_motorgpio1 = 27;
 	const int r_motorgpio2 = 24;
 };
 
